@@ -1,0 +1,55 @@
+/*Hide "Please sign in" text, margin is to prevent login form moving too far up*/
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 10px}
+
+/*Change login page background*/
+#loginPage {
+    background: url(https://i.imgur.com/Ewk3Pqw.png) !important;
+    background-size: cover !important;
+}
+
+/*If the logo is present on the details page of an item, hide the items' title*/
+#itemDetailPage .itemName.infoText.parentNameLast > bdi:nth-child(1) {display: none;}
+.hide+.detailPageWrapperContainer .itemName > bdi:nth-child(1) {display: block !important;}
+
+/*Do the same for the single episodes link back title*/
+#itemDetailPage .parentName > bdi:nth-child(1) {display: none;}
+.hide+.parentName > bdi:nth-child(1) {display: block !important;}
+
+/*Remove "My Media" title*/
+.section0 .sectionTitle {display: none;}
+
+/*Hide the "Trailers"& Upcoming tabs*/
+.mainDrawer:has(.navMenuOption-selected[href^="#/movies.html"]) + .skinHeader .emby-tab-button[data-index="2"] {
+display: none !important;
+}
+.mainDrawer:has(.navMenuOption-selected[href^="#/movies.html"]) + .skinHeader .emby-tab-button[data-index="4"] {
+display: none !important;
+}
+.mainDrawer:has(.navMenuOption-selected[href^="#/tv.html"]) + .skinHeader .emby-tab-button[data-index="2"] {
+display: none !important;
+}
+
+/*Ultrawide Fill*/
+.htmlvideoplayer {width: 100%; height: auto;}
+
+/* Hide Library card titles & BG */
+#indexPage {
+   .section0 .cardText { display: none;  }
+    background: url(https://i.imgur.com/Ewk3Pqw.png) !important;
+    background-size: cover !important;
+    .cardText { display: none;  }
+}
+#moviesPage {
+    background: url(https://i.imgur.com/Ewk3Pqw.png) !important;
+    background-size: cover !important;
+    .cardText { display: none;  }
+}
+#tvRecommendedPage {
+    background: url(https://i.imgur.com/Ewk3Pqw.png) !important;
+    background-size: cover !important;
+    .cardText { display: none;  }
+}
+
+/*Transparent top bar*/
+.skinHeader-withBackground {background-color: #20202000 !important;}
