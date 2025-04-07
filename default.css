@@ -59,7 +59,7 @@
 .detailPageWrapperContainer .padded-bottom-page {display:contents}
 .detailPageWrapperContainer .padded-left {background: transparent}
 .detailLogo {
-	display:inherit;
+	display:flex;
 	scale:2;
 }
 .detailPageWrapperContainer {
