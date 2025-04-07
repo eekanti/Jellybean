@@ -56,16 +56,16 @@
 .MuiBox-root img { content: url(assets/img/icon-alt.png) !important; }
 
 /*Detail Page Styles*/
-.detailPageWrapperContainer .padded-bottom-page {
-	display:contents
-}
-.detailPageWrapperContainer .padded-left {
-	background: transparent
-}
-.detailPageWrapperContainer {
-	background:linear-gradient(to bottom, transparent, #33006F);
-}
+.detailPageWrapperContainer .padded-bottom-page {display:contents}
+.detailPageWrapperContainer .padded-left {background: transparent}
 .detailLogo {
 	display:inherit;
 	scale:2;
+}
+.detailPageWrapperContainer {
+	background:linear-gradient(to bottom, transparent, #330050, black);
+}
+.backgroundContainer {
+	opacity:50%;
+	background:linear-gradient(to bottom, transparent, black);
 }
