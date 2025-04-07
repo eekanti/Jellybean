@@ -67,7 +67,7 @@
 }
 .backgroundContainer {
 	opacity:85%;
-	background-size: cover;
+	background-size:cover !important;
 	background-position: center;
 	background: linear-gradient(to bottom, transparent, transparent), url('assets/img/alt-bg.png');
 }
