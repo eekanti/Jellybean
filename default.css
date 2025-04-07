@@ -66,5 +66,6 @@
 	background:linear-gradient(to bottom, transparent, #33006F);
 }
 .detailLogo {
+	display:inherit;
 	scale:2;
 }
