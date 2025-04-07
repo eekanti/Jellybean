@@ -54,3 +54,17 @@
 
 .adminDrawerLogo img { content: url(assets/img/banner-alt.png) !important; } imgLogoIcon { content: url(assets/img/banner-alt.png) !important; } .pageTitleWithLogo { background-image: url(assets/img/banner-alt.png) !important; }
 .MuiBox-root img { content: url(assets/img/icon-alt.png) !important; }
+
+/*Detail Page Styles*/
+.detailPageWrapperContainer .padded-bottom-page {
+	display:contents
+}
+.detailPageWrapperContainer .padded-left {
+	background: transparent
+}
+.detailPageWrapperContainer {
+	background:linear-gradient(to bottom, transparent, #33006F);
+}
+.detailLogo {
+	scale:2;
+}
