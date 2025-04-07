@@ -4,7 +4,7 @@
 
 /*Change login page background*/
 #loginPage {
-    background: url(https://i.imgur.com/Ewk3Pqw.png) !important;
+    background: url(assets/img/alt-bg.png) !important;
     background-size: cover !important;
 }
 
@@ -20,6 +20,7 @@
 .section0 .sectionTitle {display: none;}
 
 /*Hide the Trailers, Upcoming tabs & Other*/
+
 .emby-tab-button[data-index="2"], .emby-tab-button[data-index="4"] {display:none;}
 
 /*Ultrawide Fill*/
@@ -30,7 +31,7 @@
 #moviesPage,
 #tvRecommendedPage {
    .section0 .cardText { display: none;  }
-    background: url(https://i.imgur.com/Ewk3Pqw.png) !important;
+    background: url(assets/img/alt-bg.png) !important;
     background-size: cover !important;
     .cardText { display: none;  }
 }
@@ -49,6 +50,7 @@
   transform: scale(1.03);
 }
 
-/*Change Logos*/
+/*Change Logo*/
+
 .adminDrawerLogo img { content: url(assets/img/banner-alt.png) !important; } imgLogoIcon { content: url(assets/img/banner-alt.png) !important; } .pageTitleWithLogo { background-image: url(assets/img/banner-alt.png) !important; }
 .MuiBox-root img { content: url(assets/img/icon-alt.png) !important; }
