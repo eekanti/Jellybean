@@ -20,20 +20,18 @@
 .section0 .sectionTitle {display: none;}
 
 /*Hide the Trailers, Upcoming tabs & Other*/
-
 .emby-tab-button[data-index="2"], .emby-tab-button[data-index="4"] {display:none;}
 
 /*Ultrawide Fill*/
 .htmlvideoplayer {width: 100%; height: auto;}
 
-/* Hide Library card titles & BG */
+/* Hide Library card titles & sets BG */
 #indexPage,
 #moviesPage,
 #tvRecommendedPage {
-   .section0 .cardText { display: none;  }
-    background: url(assets/img/alt-bg.png) !important;
+    .cardText {display: none;};
+    background-image: url(assets/img/alt-bg.png) !important;
     background-size: cover !important;
-    .cardText { display: none;  }
 }
 
 /*Transparent top bar*/
@@ -41,13 +39,40 @@
 
 /*Card Styling*/
 .cardBox, .cardContent {
-  border-radius: 12px !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+  overflow: hidden; /* Hide overflow to prevent the shadow from spilling out */  border-radius: 5px !important;
+  box-shadow: 2px 12px 15px 2px rgba(0, 0, 0, 0.57); /* Increased blur and spread */
   transition: transform 0.2s ease;
 }
+.card.show-animation:focus>.cardBox {
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+}
+.cardBox-bottompadded {
+	margin-bottom: 0.4em !important;
+}
+.itemsContainer > .card > .cardBox {
+	margin-right: 0.8em;
+}
+.itemsContainer > .card > .cardBox {
+	margin-left: .65em !important;
+	margin-right: .65em !important;
+}
+.layout-tv .cardBox.cardBox-bottompadded {
+	margin-bottom: 2em !important;
+}
+.cardBox:hover,
+.cardBox:focus {
+  transform: scale(1.05);
+  border: 5px solid aliceblue; /* Use outline instead of border */
+  border-radius: 3px !important; /* Keep the rounded corners */
+}
 
-.cardBox:hover {
-  transform: scale(1.03);
+/* Excludes the detail page from the hover effect */
+#itemDetailPage .cardBox:hover,
+#itemDetailPage .cardBox:focus {
+  transform: none;
+  border: none;
+  border-radius: 5px !important; /* Keep the default rounded corners */
 }
 
 /*Change Logo*/
