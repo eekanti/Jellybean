@@ -63,9 +63,11 @@
 	scale:2;
 }
 .detailPageWrapperContainer {
-	background:linear-gradient(to bottom, transparent, #330050, black);
+	background:linear-gradient(to bottom, transparent, black);
 }
 .backgroundContainer {
-	opacity:50%;
-	background:linear-gradient(to bottom, transparent, black);
+	opacity:85%;
+	background-size: cover;
+	background-position: center;
+	background: linear-gradient(to bottom, transparent, transparent), url('assets/img/alt-bg.png');
 }
